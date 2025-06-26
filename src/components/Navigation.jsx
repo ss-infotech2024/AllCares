@@ -41,7 +41,7 @@ export function Navigation() {
   return (
     <header className="border-b bg-white sticky top-0 z-50">
       {/* Top Banner */}
-      <div className="bg-primary text-primary-foreground py-2">
+      {/* <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center text-sm font-medium">
             <div className="flex items-center gap-6">
@@ -60,7 +60,7 @@ export function Navigation() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
@@ -74,11 +74,11 @@ export function Navigation() {
             </div>
             <div>
               <h1 className="font-display font-bold text-xl text-foreground">
-                MedSupply
+                Mikb
               </h1>
-              <p className="text-xs text-muted-foreground">
+              {/* <p className="text-xs text-muted-foreground">
                 Professional Healthcare
-              </p>
+              </p> */}
             </div>
           </Link>
 
