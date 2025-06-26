@@ -1,7 +1,9 @@
+/* Tailwind layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Theme Styles */
 @layer base {
   /**
    * Medical E-commerce Theme
@@ -103,9 +105,7 @@
     --sidebar-border: 215 30% 25%;
     --sidebar-ring: 210 100% 50%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -115,6 +115,7 @@
   }
 }
 
+/* Custom utility class */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
