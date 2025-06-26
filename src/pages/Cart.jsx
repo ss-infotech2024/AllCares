@@ -203,7 +203,7 @@ const Cart = () => {
                 {shippingCost > 0 && (
                   <div className="text-sm text-muted-foreground bg-muted p-3 rounded-lg">
                     <Truck className="h-4 w-4 inline mr-2" />
-                    Free shipping on orders over $5,000
+                    Free shipping on orders over ₹15,000
                   </div>
                 )}
               </CardContent>
