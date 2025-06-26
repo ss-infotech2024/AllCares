@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/ui/Button"; // Adjust path to your components
-import { Badge } from "../components/ui/Badge";
+import { Badge } from "../components/ui/badge";
 import {
   Shield,
   Award,
@@ -100,7 +100,7 @@ export function Hero() {
           <div className="relative">
             <div className="relative bg-white rounded-2xl shadow-2xl p-8">
               <img
-                src="/api/placeholder/600/400"
+                src="https://tse3.mm.bing.net/th?id=OIP.teuGPtJuMaxnR-NWD5Du8gHaEK&pid=Api&P=0&h=180"
                 alt="Medical Equipment"
                 className="w-full h-auto rounded-lg"
               />

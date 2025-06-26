@@ -93,7 +93,11 @@ export function ProductCard({ product, className }) {
             <Badge variant="outline" className="text-xs">
               {product.category}
             </Badge>
-
+            <br />
+             {/* SubCategory */}
+            <Badge variant="outline" className="text-xs">
+              {product.subCategory}
+            </Badge>
             {/* Product Name */}
             <h3 className="font-semibold text-sm leading-tight line-clamp-2 min-h-[2.5rem]">
               {product.name}
@@ -135,7 +139,7 @@ export function ProductCard({ product, className }) {
             <div className="text-xs text-muted-foreground">
               <p className="line-clamp-2">{product.description}</p>
             </div>
-
+            
             {/* Certifications */}
             {product.certifications && product.certifications.length > 0 && (
               <div className="flex gap-1">
