@@ -19,16 +19,7 @@ import {
 } from "../components/ui/NavigationMenu";
 import { useCart } from "../context/CartContext.jsx";
 import { categories } from "../data/products.js";
-import {
-  Heart,
-  Menu,
-  Search,
-  ShoppingCart,
-  User,
-  Phone,
-  Shield,
-  Award,
-} from "lucide-react";
+import { Heart, Menu, Search, ShoppingCart, User } from "lucide-react";
 import { cn } from "../lib/Utils.js";
 
 export function Navigation() {
@@ -40,45 +31,14 @@ export function Navigation() {
 
   return (
     <header className="border-b bg-white sticky top-0 z-50">
-      {/* Top Banner */}
-      {/* <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center text-sm font-medium">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2">
-                <Shield className="h-4 w-4" />
-                <span>FDA Approved Products</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Award className="h-4 w-4" />
-                <span>ISO 13485 Certified</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>24/7 Support: 1-800-MEDICAL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Main Navigation */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">
-                M
-              </span>
-            </div>
             <div>
               <h1 className="font-display font-bold text-xl text-foreground">
-                Mikb
+                AllCare
               </h1>
-              {/* <p className="text-xs text-muted-foreground">
-                Professional Healthcare
-              </p> */}
             </div>
           </Link>
 
@@ -146,6 +106,25 @@ export function Navigation() {
                 <Icon className="h-5 w-5" />
               </Button>
             ))}
+
+            {/* Login / Register (Desktop) */}
+            <Button
+              variant="outline"
+              size="sm"
+              className="hidden lg:flex"
+              asChild
+            >
+              <Link to="/login">Login</Link>
+            </Button>
+            <Button
+              variant="default"
+              size="sm"
+              className="hidden lg:flex"
+              asChild
+            >
+              <Link to="/register">Register</Link>
+            </Button>
+
             <Button variant="ghost" size="icon" className="relative" asChild>
               <Link to="/cart">
                 <ShoppingCart className="h-5 w-5" />
@@ -186,6 +165,7 @@ export function Navigation() {
                       {item.label}
                     </Link>
                   ))}
+
                   <div className="space-y-2">
                     <h3 className="text-lg font-medium">Categories</h3>
                     {categories.map((category) => (
@@ -198,6 +178,24 @@ export function Navigation() {
                         {category.icon} {category.name}
                       </Link>
                     ))}
+                  </div>
+
+                  {/* Login / Register (Mobile) */}
+                  <div className="mt-6 space-y-2">
+                    <Link
+                      to="/login"
+                      className="block text-lg font-medium text-primary"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Login
+                    </Link>
+                    <Link
+                      to="/register"
+                      className="block text-lg font-medium text-primary"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Register
+                    </Link>
                   </div>
                 </nav>
               </SheetContent>

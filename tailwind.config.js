@@ -30,7 +30,6 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        // Optional: sidebar
         "sidebar-background": "hsl(var(--sidebar-background))",
         "sidebar-foreground": "hsl(var(--sidebar-foreground))",
         "sidebar-primary": "hsl(var(--sidebar-primary))",
