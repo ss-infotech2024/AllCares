@@ -1,9 +1,9 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "./components/ui/Toaster.jsx";
+import { Toaster as Sonner } from "./components/ui/Sonner.jsx";
+import { TooltipProvider } from "./components/ui/Tooltip.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Routes, Route } from "react-router-dom";
-import { CartProvider } from "@/context/CartContext";
+import { CartProvider } from "./context/CartContext.jsx";
 import Index from "./pages/Index";
 import Shop from "./pages/Shop";
 import ProductDetail from "./pages/ProductDetails.jsx";
