@@ -10,7 +10,7 @@ import ProductDetail from "./pages/ProductDetails.jsx";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound.jsx";
-import LogIn from "./pages/LogIn.jsx";
+import LogIn from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 
 const queryClient = new QueryClient();
